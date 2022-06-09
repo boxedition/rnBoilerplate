@@ -2,7 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+const Default = () => {
     return (
         <View style={styles.container}>
             <Text>Hello World!</Text>
@@ -12,6 +12,7 @@ export default function App() {
     );
 }
 
+export default Default
 const styles = StyleSheet.create({
     container: {
         flex: 1,

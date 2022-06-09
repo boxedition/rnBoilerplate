@@ -5,10 +5,12 @@ import Stack from './stacks';
 /**
  * Default Stack under stacks folders
  */
-
-const NavContainer = () => {
+interface INavConteiner {
+    callback?: () => void,
+}
+const NavContainer = ({ callback }: INavConteiner) => {
     return (
-        <NavigationContainer>
+        <NavigationContainer onReady={callback}>
             <Stack />
         </NavigationContainer>
     )
