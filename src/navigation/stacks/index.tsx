@@ -6,7 +6,7 @@ import Default from '../../view/Default';
 const Index_Stack = createStackNavigator();
 const Stack = () => {
     return (
-        <Index_Stack.Navigator>
+        <Index_Stack.Navigator screenOptions={{ headerShown: false }}>
             <Index_Stack.Screen name={APP} component={Default} />
         </Index_Stack.Navigator>
     )
