@@ -6,14 +6,14 @@ const localFonts = {
     "Inter-Thin": require('../../assets/fonts/Inter-Thin.ttf'),
 }
 
-const type = {
-    regural: "Inter-Regular",
+const family = {
+    regular: "Inter-Regular",
     bold: "Inter-Bold",
     semi: "Inter-SemiBold",
     medium: "Inter-Medium",
     thin: "Inter-Thin",
 };
 
-const Fonts = { localFonts, type };
+const Fonts = { localFonts, family };
 
 export default Fonts;

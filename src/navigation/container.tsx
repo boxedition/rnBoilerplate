@@ -4,6 +4,7 @@ import Stack from './stacks';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from '../store';
 import { Provider } from 'react-redux';
+import Drawer from './drawer';
 
 /**
  * Default Stack under stacks folders
@@ -16,7 +17,8 @@ const NavContainer = ({ callback }: INavConteiner) => {
         <Provider store={store}>
             <PersistGate persistor={persistor}>
                 <NavigationContainer onReady={callback}>
-                    <Stack />
+                    <Drawer />
+                    {/*  <Stack /> */}
                 </NavigationContainer>
             </PersistGate>
         </Provider>
